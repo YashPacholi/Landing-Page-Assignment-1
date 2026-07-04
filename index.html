@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AnimeVerse — Your Anime Hub</title>
+<title>MainCrafts — Build Smarter</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -12,12 +12,12 @@
      1. COLORS & FONTS — stored once, reused everywhere
      ============================================ */
   :root{
-    --pink:#FF4D8D;      /* main accent - anime energy */
-    --purple:#7B5CFF;    /* secondary accent */
-    --dark:#15111F;      /* background */
-    --card:#1F1A2E;      /* card background */
-    --text:#F3F0FF;      /* main text */
-    --muted:#A79FC4;     /* secondary text */
+    --blue:#4C6FFF;      /* main accent */
+    --orange:#FF8A4C;    /* secondary accent */
+    --dark:#12141F;      /* background */
+    --card:#1B1E2E;      /* card background */
+    --text:#F2F3F8;      /* main text */
+    --muted:#9698B0;     /* secondary text */
   }
 
   *{margin:0; padding:0; box-sizing:border-box;}
@@ -45,7 +45,7 @@
   header{
     position:sticky;
     top:0;
-    background:rgba(21,17,31,0.9);
+    background:rgba(18,20,31,0.9);
     backdrop-filter:blur(8px);
     border-bottom:1px solid rgba(255,255,255,0.08);
     z-index:100;
@@ -65,7 +65,7 @@
     align-items:center;
     gap:8px;
   }
-  .logo i{color:var(--pink);}
+  .logo i{color:var(--blue);}
 
   .nav-menu{
     display:flex;
@@ -78,7 +78,7 @@
     font-size:0.95rem;
     opacity:0.9;
   }
-  .nav-menu a.link:hover{opacity:1; color:var(--pink);}
+  .nav-menu a.link:hover{opacity:1; color:var(--blue);}
 
   /* Dropdown: hidden by default, shown when parent has "open" class */
   .dropdown-wrap{position:relative;}
@@ -102,10 +102,10 @@
     border-radius:6px;
     font-size:0.9rem;
   }
-  .dropdown a:hover{background:rgba(255,77,141,0.12); color:var(--pink);}
+  .dropdown a:hover{background:rgba(76,111,255,0.12); color:var(--blue);}
 
   .cta-btn{
-    background:linear-gradient(100deg, var(--pink), var(--purple));
+    background:linear-gradient(100deg, var(--blue), var(--orange));
     color:#fff;
     font-weight:600;
     padding:10px 20px;
@@ -134,12 +134,12 @@
     padding:100px 0 80px;
     text-align:center;
     background:
-      radial-gradient(600px 400px at 20% 0%, rgba(255,77,141,0.18), transparent 60%),
-      radial-gradient(600px 400px at 80% 20%, rgba(123,92,255,0.18), transparent 60%);
+      radial-gradient(600px 400px at 20% 0%, rgba(76,111,255,0.18), transparent 60%),
+      radial-gradient(600px 400px at 80% 20%, rgba(255,138,76,0.18), transparent 60%);
   }
 
   .hero span.tag{
-    color:var(--pink);
+    color:var(--blue);
     font-weight:600;
     font-size:0.9rem;
     letter-spacing:0.05em;
@@ -150,7 +150,7 @@
     margin:16px 0 20px;
   }
   .hero h1 span{
-    background:linear-gradient(100deg, var(--pink), var(--purple));
+    background:linear-gradient(100deg, var(--blue), var(--orange));
     -webkit-background-clip:text;
     background-clip:text;
     color:transparent;
@@ -166,7 +166,7 @@
     display:inline-flex;
     align-items:center;
     gap:8px;
-    background:linear-gradient(100deg, var(--pink), var(--purple));
+    background:linear-gradient(100deg, var(--blue), var(--orange));
     color:#fff;
     font-weight:600;
     padding:15px 30px;
@@ -181,7 +181,7 @@
   .features{padding:90px 0; background:var(--card);}
 
   .section-head{text-align:center; max-width:520px; margin:0 auto 50px;}
-  .section-head span.tag{color:var(--pink); font-weight:600; font-size:0.9rem;}
+  .section-head span.tag{color:var(--blue); font-weight:600; font-size:0.9rem;}
   .section-head h2{font-size:2rem; margin-top:10px;}
   .section-head p{color:var(--muted); margin-top:12px;}
 
@@ -200,12 +200,12 @@
   }
   .card:hover{
     transform:translateY(-6px);
-    border-color:var(--pink);
+    border-color:var(--blue);
   }
 
   .card i{
     font-size:1.4rem;
-    color:var(--pink);
+    color:var(--blue);
     margin-bottom:14px;
     display:block;
   }
@@ -226,7 +226,7 @@
   }
   .footer-row .links{display:flex; gap:22px;}
   .footer-row .links a{color:var(--muted); font-size:0.88rem;}
-  .footer-row .links a:hover{color:var(--pink);}
+  .footer-row .links a:hover{color:var(--blue);}
   .footer-row p{color:var(--muted); font-size:0.85rem;}
 
   /* ============================================
@@ -260,7 +260,7 @@
 
 <header>
   <div class="wrap nav-row">
-    <a href="#home" class="logo"><i class="fa-solid fa-clapperboard"></i>AnimeVerse</a>
+    <a href="#home" class="logo"><i class="fa-solid fa-cubes"></i>MainCrafts</a>
 
     <ul class="nav-menu" id="navMenu">
       <li><a href="#home" class="link">Home</a></li>
@@ -269,9 +269,9 @@
       <li class="dropdown-wrap" id="servicesDropdown">
         <a href="#" class="link" id="servicesToggle">Services ▾</a>
         <div class="dropdown">
-          <a href="#">Latest Episodes</a>
-          <a href="#">HD Downloads</a>
-          <a href="#">Request an Anime</a>
+          <a href="#">Web Apps</a>
+          <a href="#">Bots & Automation</a>
+          <a href="#">API Integration</a>
         </div>
       </li>
 
@@ -287,9 +287,9 @@
 
 <section class="hero" id="home">
   <div class="wrap">
-    <span class="tag">✦ NEW EPISODES DAILY</span>
-    <h1>Your Anime, <span>Delivered Fast</span></h1>
-    <p>Auto-detected releases, multiple qualities, and instant uploads — everything an anime fan actually wants, in one place.</p>
+    <span class="tag">✦ BUILD. SHIP. SCALE.</span>
+    <h1>Build Smarter with <span>MainCrafts</span></h1>
+    <p>From idea to shipped product — we design and build the software that runs your next big thing.</p>
     <a href="#contact" class="btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 </section>
@@ -297,31 +297,31 @@
 <section class="features" id="features">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">WHY ANIMEVERSE</span>
-      <h2>Built for real anime fans</h2>
-      <p>No clutter, no delays — just the episodes you're waiting for.</p>
+      <span class="tag">WHY MAINCRAFTS</span>
+      <h2>Everything you need, nothing you don't</h2>
+      <p>Four principles guide every line of code we ship.</p>
     </div>
 
     <div class="grid">
       <div class="card">
         <i class="fa-solid fa-bolt"></i>
         <h3>Fast</h3>
-        <p>New episodes detected and posted within minutes of release.</p>
+        <p>Optimized builds mean your app loads quick and stays quick under load.</p>
       </div>
       <div class="card">
         <i class="fa-solid fa-mobile-screen-button"></i>
         <h3>Responsive</h3>
-        <p>Looks and works great on phone, tablet, or desktop.</p>
+        <p>Every layout adapts cleanly from desktop down to a phone in one hand.</p>
       </div>
       <div class="card">
         <i class="fa-solid fa-layer-group"></i>
-        <h3>Multi-Quality</h3>
-        <p>Choose 480p, 720p, or 1080p depending on your data plan.</p>
+        <h3>Scalable</h3>
+        <p>Architecture that grows with your users, not against them.</p>
       </div>
       <div class="card">
         <i class="fa-solid fa-shield-halved"></i>
-        <h3>Reliable</h3>
-        <p>Stable uploads with backup sources so links never die.</p>
+        <h3>Secure</h3>
+        <p>Sensible defaults and encrypted data, baked in from the first commit.</p>
       </div>
     </div>
   </div>
@@ -329,7 +329,7 @@
 
 <footer id="contact">
   <div class="wrap footer-row">
-    <p>© 2025 AnimeVerse. Built by Yash Pacholi.</p>
+    <p>© 2026 MainCrafts. Built by Yash Pacholi.</p>
     <div class="links">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms</a>
